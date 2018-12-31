@@ -605,7 +605,8 @@ body {
     @media (max-width: 56.25em) {
       .popup__content {
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        text-align: center; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
@@ -621,8 +622,7 @@ body {
     @media (max-width: 56.25em) {
       .popup__left {
         display: inline-block;
-        width: 100%;
-        padding-left: 8px; } }
+        width: 100%; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -665,6 +665,10 @@ body {
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s; }
+    @media (max-width: 56.25em) {
+      .popup__close:link, .popup__close:visited {
+        top: 0.5rem;
+        right: 1.5rem; } }
   .popup__close:hover {
     color: #55c57a;
     transform: rotate(90deg); }

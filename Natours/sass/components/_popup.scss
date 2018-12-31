@@ -25,6 +25,7 @@
     @include response(tab-port) {
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
   }
 
@@ -46,7 +47,6 @@
     @include response(tab-port) {
       display: inline-block;
       width: 100%;
-      padding-left: 8px;
     }
   }
 
@@ -108,6 +108,11 @@
       text-decoration: none;
       display: inline-block;
       transition: all 0.3s;
+
+      @include response(tab-port) {
+        top: 0.5rem;
+        right: 1.5rem;
+      }
     }
 
     &:hover {
