@@ -3,6 +3,10 @@
     margin-bottom: 2rem;
   }
 
+  @include response(tab-port) {
+    text-align: center;
+  }
+
   &__input {
     font-family: inherit;
     color: inherit;

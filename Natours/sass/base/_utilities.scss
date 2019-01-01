@@ -15,6 +15,10 @@
   @include response(tab-port) {
     margin-bottom: 3rem !important;
   }
+
+  @include response(tab-port) {
+    text-align: center !important;
+  }
 }
 .u-margin-bottom-small {
   margin-bottom: 1.3rem !important;

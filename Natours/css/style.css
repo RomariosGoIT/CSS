@@ -110,6 +110,9 @@ body {
   @media (max-width: 56.25em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      text-align: center !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.3rem !important; }
@@ -496,6 +499,10 @@ body {
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
+
+@media (max-width: 56.25em) {
+  .form {
+    text-align: center; } }
 
 .form__input {
   font-family: inherit;
