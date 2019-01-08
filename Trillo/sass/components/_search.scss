@@ -22,6 +22,10 @@
     transition: all 0.3s;
     margin-right: -3.25rem;
 
+    @media only screen and (max-width: $bp-smallest) {
+      width: 80%;
+    }
+
     &:focus {
       outline: none;
       width: 100%;
@@ -29,6 +33,7 @@
 
       @media only screen and (max-width: $bp-smallest) {
         background-color: var(--color-grey-light-2);
+        width: 80%;
       }
     }
 
