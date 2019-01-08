@@ -292,7 +292,7 @@ body {
   display: flex;
   align-items: center;
   border-bottom: var(--line); }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 26.25em) {
     .overview {
       flex-wrap: wrap;
       text-align: center;
@@ -307,14 +307,14 @@ body {
       .overview__heading {
         font-size: 1.8rem;
         padding: 1.25rem 2rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .overview__heading {
         order: -1;
         flex: 0 0 100%; } }
   .overview__stars {
     display: flex;
     margin-right: auto; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .overview__stars {
         order: -1;
         margin-right: 0; } }
@@ -416,14 +416,14 @@ body {
   border-bottom: var(--line);
   display: flex;
   flex-wrap: wrap; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     .list {
       display: inline-block;
       width: 100%; } }
   .list__item {
     flex: 0 0 50%;
     margin-bottom: 1.7rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26.25em) {
       .list__item {
         margin-bottom: 0; }
         .list__item:not(:last-child) {
@@ -493,7 +493,7 @@ body {
   text-align: center; }
   @media only screen and (max-width: 56.25em) {
     .cta {
-      padding: 2.5rem 0; } }
+      padding: 2.5rem 1rem; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
