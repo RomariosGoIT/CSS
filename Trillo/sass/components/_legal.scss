@@ -4,6 +4,10 @@
   padding: 2.5rem;
   color: var(--color-grey-light-4);
 
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+
   & > span {
     color: var(--color-grey-light-1);
     box-shadow: var(--shadow-dark);

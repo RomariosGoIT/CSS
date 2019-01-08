@@ -15,8 +15,13 @@
     width: 4rem;
     border-radius: 50%;
     border: 3px solid var(--color-white);
+
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
+  }
+
+  &__friends {
+    display: flex;
   }
 }
