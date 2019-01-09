@@ -1,0 +1,29 @@
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid var(--color-grey-light-3);
+  box-shadow: var(--shadow-light);
+  border-radius: 0.5rem;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--color-white);
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--color-grey-light-3);
+  }
+}
+.autocomplete-items div:hover {
+  background-color: var(--color-grey-light-3);
+}
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: var(--color-white);
+}
