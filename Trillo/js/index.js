@@ -85,3 +85,13 @@ const autocomplete = (inp, arr) => {
 };
 
 autocomplete(document.getElementById('myInput'), hotels);
+
+//////////////// DROPDOWN //////////////////////////
+
+window.onclick = function(event) {
+  const btn = event.target.closest('.dropbtn');
+  if (btn) {
+    const dropdowns = document.querySelector('.dropdown-content');
+    dropdowns.classList.toggle('show');
+  }
+};
