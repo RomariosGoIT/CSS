@@ -184,6 +184,9 @@ body {
     align-items: center; }
   .user-nav > *:hover {
     background-color: var(--color-grey-light-2); }
+    @media only screen and (max-width: 26.25em) {
+      .user-nav > *:hover {
+        background-color: var(--color-white); } }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem;
