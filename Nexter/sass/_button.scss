@@ -11,19 +11,12 @@
   transition: all 0.2s;
 
   &:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
     background-color: $color-primary-dark;
   }
 
-  &:focus {
-    outline: none;
-    transform: translateY(-0.3rem);
-    box-shadow: 0 0.6rem 1rem rgba(#000, 0.2);
-  }
-
+  &:focus,
   &:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.6rem 1rem rgba(#000, 0.2);
+    background-color: $color-primary-dark;
+    outline: none;
   }
 }
