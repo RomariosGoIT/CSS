@@ -13,46 +13,83 @@
     justify-content: flex-end;
     align-items: center;
   }
-}
 
-.nav-btn {
-  border: none;
-  border-radius: 0;
-
-  background-color: #fff;
-  height: 0.2rem;
-  width: 4.5rem;
-  margin-top: 4rem;
-  position: fixed;
-
-  &::before,
-  &::after {
-    content: '';
-    display: block;
-    background-color: #fff;
-    height: 0.2rem;
-    width: 4.5rem;
+  &__navigation {
+    display: none;
+    width: 0;
+    transition: all 0.2s;
   }
 
-  &::before {
-    transform: translateY(-1.5rem);
+  &__list {
+    // display: none;
+    list-style: none;
+    font-size: 2.4rem;
+    color: #fff;
   }
 
-  &::after {
-    transform: translateY(1.3rem);
+  &__btn {
+    border: none;
+    border-radius: 0;
+    position: fixed;
+    background-color: transparent;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-large) {
+      position: relative;
+      margin-top: 0;
+      margin-right: 3rem;
+
+      &::before {
+        transform: translateY(-1.2rem);
+      }
+
+      &::after {
+        transform: translateY(1rem);
+      }
+    }
   }
 
-  @media only screen and (max-width: $bp-large) {
+  &__icon {
+    margin-top: 4rem;
     position: relative;
-    margin-top: 0;
-    margin-right: 3rem;
+
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      background-color: #fff;
+      height: 0.2rem;
+      width: 4.5rem;
+      transition: all 0.2s;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
 
     &::before {
-      transform: translateY(-1.2rem);
+      top: -1.3rem;
     }
 
     &::after {
-      transform: translateY(1rem);
+      top: 1.3rem;
     }
+  }
+
+  &__btn:hover &__icon::before {
+    top: -1.5rem;
+  }
+
+  &__btn:hover &__icon::after {
+    top: 1.5rem;
+  }
+
+  &__btn:focus ~ &__navigation {
+    width: 100px;
   }
 }
