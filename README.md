@@ -1,12 +1,12 @@
 
 
-> ## Nexter project [open](https://romariosgoit.github.io/CSS/Natours/)
+> ## Natours project [open](https://romariosgoit.github.io/CSS/Natours/) ## Used CSS FLOAT LAYOUT
   ![Nexter](/Natours/preview.jpg)
 > ## Used CSS FLOAT LAYOUT
 
 <hr>
 
-> ## Nexter project [open](https://romariosgoit.github.io/CSS/Trillo/)
+> ## Trillo project [open](https://romariosgoit.github.io/CSS/Trillo/)
   ![Nexter](/Trillo/preview.jpg)
 > ## Used CSS FLEX LAYOUT
 
