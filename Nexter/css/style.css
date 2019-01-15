@@ -8,7 +8,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 80em) {
     html {
       font-size: 50%; } }
 
@@ -21,7 +21,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] minmax(8rem, max-content) [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns: [sidebar-start] minmax(8rem, max-content) [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   transition: all 0.2s; }
   @media only screen and (max-width: 62.5em) {
     .container {
@@ -117,15 +117,6 @@ body {
     position: fixed;
     background-color: transparent;
     cursor: pointer; }
-    @media only screen and (max-width: 62.5em) {
-      .sidebar__button {
-        position: relative;
-        margin-top: 0;
-        margin-right: 3rem; }
-        .sidebar__button::before {
-          transform: translateY(-1.2rem); }
-        .sidebar__button::after {
-          transform: translateY(1rem); } }
   .sidebar__icon {
     margin-top: 4rem;
     position: relative; }
@@ -146,6 +137,9 @@ body {
   .sidebar__checkbox:checked ~ .sidebar__nav {
     opacity: 1;
     width: 200px; }
+    @media only screen and (max-width: 80em) {
+      .sidebar__checkbox:checked ~ .sidebar__nav {
+        width: 160px; } }
   .sidebar__checkbox:checked ~ .sidebar__nav .sidebar__list {
     transform: translateX(0); }
   .sidebar__button:hover .sidebar__icon::before {
@@ -172,23 +166,6 @@ body {
     display: flex;
     position: relative;
     justify-content: flex-end; }
-    .sidebar__link:link, .sidebar__link:visited {
-      display: inline-block;
-      font-size: 2rem;
-      font-weight: 300;
-      padding: 1rem 2rem;
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-      background-size: 240%;
-      transition: all 0.5s; }
-      .sidebar__link:link span, .sidebar__link:visited span {
-        margin-right: 1.5rem;
-        display: inline-block; }
-    .sidebar__link:hover, .sidebar__link:active {
-      background-position: 100%;
-      color: #c69963; }
     .sidebar__nav {
       width: 0;
       opacity: 0;
@@ -232,23 +209,7 @@ body {
     .sidebar__checkbox:checked ~ .sidebar__nav {
       opacity: 1;
       padding: 20px 0;
-      width: 100%; }
-    .sidebar__checkbox:checked ~ .sidebar__nav .sidebar__list {
-      transform: translateX(0); }
-    .sidebar__button:hover .sidebar__icon::before {
-      top: -1.5rem; }
-    .sidebar__button:hover .sidebar__icon::after {
-      top: 1.5rem; }
-    .sidebar__button:focus ~ .sidebar__navigation {
-      width: 100px; }
-    .sidebar__checkbox:checked + .sidebar__button .sidebar__icon {
-      background-color: transparent; }
-    .sidebar__checkbox:checked + .sidebar__button .sidebar__icon::before {
-      top: 0;
-      transform: rotate(135deg); }
-    .sidebar__checkbox:checked + .sidebar__button .sidebar__icon::after {
-      top: 0;
-      transform: rotate(-135deg); } }
+      width: 100%; } }
 
 .header {
   background-color: #54483a;
