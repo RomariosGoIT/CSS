@@ -29,7 +29,7 @@ body {
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 6rem calc(100vh - 6rem); } }
+      grid-template-rows: minmax(5rem, max-content) calc(100vh - 6rem); } }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
@@ -146,8 +146,6 @@ body {
     top: -1.5rem; }
   .sidebar__button:hover .sidebar__icon::after {
     top: 1.5rem; }
-  .sidebar__button:focus ~ .sidebar__navigation {
-    width: 100px; }
   .sidebar__checkbox:checked + .sidebar__button .sidebar__icon {
     background-color: transparent; }
   .sidebar__checkbox:checked + .sidebar__button .sidebar__icon::before {
@@ -210,6 +208,64 @@ body {
       opacity: 1;
       padding: 20px 0;
       width: 100%; } }
+
+@media only screen and (max-width: 50em) {
+  .sidebar {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: flex-end; }
+    .sidebar__nav {
+      width: 0;
+      height: 0;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      margin-top: 0;
+      padding: 0; }
+    .sidebar__list {
+      position: relative;
+      list-style: none;
+      font-size: 2.4rem;
+      color: #fff;
+      transform: translateX(-200px);
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      display: grid;
+      grid-template-columns: max-content;
+      justify-content: center; }
+    .sidebar__button {
+      border: none;
+      border-radius: 0;
+      position: absolute;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 150; }
+    .sidebar__icon {
+      margin-top: 10px;
+      margin-right: 10px;
+      position: relative; }
+      .sidebar__icon, .sidebar__icon::before, .sidebar__icon::after {
+        display: inline-block;
+        background-color: #fff;
+        height: 0.2rem;
+        width: 4.5rem;
+        transition: all 0.2s; }
+      .sidebar__icon::before, .sidebar__icon::after {
+        content: '';
+        position: absolute;
+        left: 0; }
+      .sidebar__icon::before {
+        top: -1.3rem; }
+      .sidebar__icon::after {
+        top: 1.3rem; }
+    .sidebar__checkbox:checked ~ .sidebar__nav {
+      opacity: 1;
+      padding-bottom: 225px;
+      width: 100%; }
+    .sidebar__checkbox:checked ~ .sidebar__nav .sidebar__list {
+      transform: translateX(0); } }
 
 .header {
   background-color: #54483a;

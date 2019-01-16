@@ -96,15 +96,11 @@
   &__checkbox:checked ~ &__nav &__list {
     transform: translateX(0);
   }
-
   &__button:hover &__icon::before {
     top: -1.5rem;
   }
   &__button:hover &__icon::after {
     top: 1.5rem;
-  }
-  &__button:focus ~ &__navigation {
-    width: 100px;
   }
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;
@@ -182,6 +178,79 @@
       opacity: 1;
       padding: 20px 0;
       width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: $bp-medium) {
+  .sidebar {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    &__nav {
+      width: 0;
+      height: 0;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      margin-top: 0;
+      padding: 0;
+    }
+    &__list {
+      position: relative;
+      list-style: none;
+      font-size: 2.4rem;
+      color: #fff; // margin-top: -80px;
+      transform: translateX(-200px);
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      display: grid;
+      grid-template-columns: max-content;
+      justify-content: center;
+    }
+    &__button {
+      border: none;
+      border-radius: 0;
+      position: absolute;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 150;
+    }
+    &__icon {
+      margin-top: 10px;
+      margin-right: 10px;
+      position: relative;
+      &,
+      &::before,
+      &::after {
+        display: inline-block;
+        background-color: #fff;
+        height: 0.2rem;
+        width: 4.5rem;
+        transition: all 0.2s;
+      }
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+      }
+      &::before {
+        top: -1.3rem;
+      }
+      &::after {
+        top: 1.3rem;
+      }
+    }
+    &__checkbox:checked ~ &__nav {
+      opacity: 1;
+      padding-bottom: 225px;
+      width: 100%;
+      // height: 100%;
+    }
+    &__checkbox:checked ~ &__nav &__list {
+      transform: translateX(0);
     }
   }
 }
