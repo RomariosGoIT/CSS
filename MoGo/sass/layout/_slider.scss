@@ -1,0 +1,58 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+  padding-bottom: 2rem;
+
+  span {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  &-item {
+    position: relative;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    margin: 0 1rem;
+    padding-top: 2rem;
+    opacity: 0.6;
+    border-top: 5px solid #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 1;
+    }
+    &:hover:after {
+      width: 7rem;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0rem;
+      height: 5px;
+      background-color: #f38181;
+      top: -5px;
+      left: 0;
+      z-index: 1;
+      transition: all 0.2s;
+    }
+
+    &.active {
+      opacity: 1;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 7rem;
+        height: 5px;
+        background-color: #f38181;
+        top: -5px;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+}

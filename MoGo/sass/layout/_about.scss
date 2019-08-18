@@ -1,0 +1,17 @@
+.about {
+  padding-top: 8rem;
+  padding-bottom: 9rem;
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &-item {
+      width: 30%;
+      &:hover {
+        background: linear-gradient(to bottom, #f38181, #fce38a);
+      }
+    }
+  }
+  &__img {
+  }
+}

@@ -4,3 +4,30 @@ body {
   line-height: 1.6;
   color: $color-main;
 }
+
+.section-title {
+  text-align: center;
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto 4rem;
+  &__sup {
+    font-size: 2.4rem;
+    font-family: 'Kaushan Script', cursive;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:after {
+      content: '';
+      display: block;
+      width: 6rem;
+      height: 5px;
+      margin: 4rem auto;
+      background-color: #f38181;
+    }
+  }
+  &__text {
+    color: #999999;
+  }
+}
