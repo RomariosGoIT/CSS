@@ -6,12 +6,40 @@
     justify-content: space-between;
     position: relative;
     &-item {
-      width: 30%;
+      width: 38rem;
+      background: linear-gradient(to bottom, #f38181, #fce38a);
+      transition: 0.5s;
+      position: relative;
       &:hover {
-        background: linear-gradient(to bottom, #f38181, #fce38a);
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px 1px #95e1d3;
+      }
+      &:hover .about__text {
+        opacity: 1;
+      }
+      &:hover img {
+        opacity: 0.1;
       }
     }
   }
+
+  &__text {
+    width: 100%;
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+
   &__img {
+    transition: 0.5s;
+    display: block;
   }
 }

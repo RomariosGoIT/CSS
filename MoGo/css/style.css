@@ -154,7 +154,8 @@ h5 {
   .header__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-top: 1rem; }
   .header__logo {
     font-size: 3rem;
     font-weight: 700;
@@ -245,6 +246,30 @@ h5 {
     justify-content: space-between;
     position: relative; }
     .about__images-item {
-      width: 30%; }
+      width: 38rem;
+      background: linear-gradient(to bottom, #f38181, #fce38a);
+      transition: 0.5s;
+      position: relative; }
       .about__images-item:hover {
-        background: linear-gradient(to bottom, #f38181, #fce38a); }
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px 1px #95e1d3; }
+      .about__images-item:hover .about__text {
+        opacity: 1; }
+      .about__images-item:hover img {
+        opacity: 0.1; }
+  .about__text {
+    width: 100%;
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: 0.5s; }
+  .about__img {
+    transition: 0.5s;
+    display: block; }
