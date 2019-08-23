@@ -244,7 +244,8 @@ h5 {
   .about__images {
     display: flex;
     justify-content: space-between;
-    position: relative; }
+    position: relative;
+    margin-top: 8rem; }
     .about__images-item {
       width: 38rem;
       background: linear-gradient(to bottom, #f38181, #fce38a);
@@ -273,3 +274,69 @@ h5 {
   .about__img {
     transition: 0.5s;
     display: block; }
+
+.statistics {
+  background: #95e1d3; }
+  .statistics .stat {
+    display: flex;
+    justify-content: space-around; }
+    .statistics .stat__item {
+      color: #fff;
+      text-align: center;
+      padding: 5rem 0 6rem;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      width: 24.3rem; }
+      .statistics .stat__item:last-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.3); }
+      .statistics .stat__item-num {
+        font-size: 7.2rem;
+        font-weight: 700;
+        margin: 0; }
+      .statistics .stat__item-text {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        margin: 0; }
+
+.services {
+  padding-top: 8rem;
+  padding-bottom: 9rem; }
+  .services__block {
+    display: flex;
+    flex-wrap: wrap; }
+  .services__item {
+    position: relative;
+    width: 33.33%;
+    padding: 30px 30px 30px;
+    padding-left: 50px; }
+    .services__item-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .services__item-text {
+      color: #999999;
+      font-size: 1.5rem; }
+    .services__item-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33px;
+      height: 33px; }
+      .services__item-icon:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: url(../img/services/services-icons.png);
+        background-size: cover;
+        position: absolute;
+        top: 33px;
+        left: 0; }
+    .services__item:nth-child(2) .services__item-icon:before {
+      background-position-x: -58px; }
+    .services__item:nth-child(3) .services__item-icon:before {
+      background-position-x: -115px; }
+    .services__item:nth-child(4) .services__item-icon:before {
+      background-position-x: -171px; }
+    .services__item:nth-child(5) .services__item-icon:before {
+      background-position-x: -227px; }
+    .services__item:nth-child(6) .services__item-icon:before {
+      background-position-x: -283px; }
