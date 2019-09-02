@@ -283,15 +283,17 @@ h5 {
     .statistics .stat__item {
       color: #fff;
       text-align: center;
-      padding: 5rem 0 6rem;
+      padding: 7rem 2.5rem;
       border-left: 1px solid rgba(255, 255, 255, 0.3);
       width: 24.3rem; }
       .statistics .stat__item:last-child {
         border-right: 1px solid rgba(255, 255, 255, 0.3); }
       .statistics .stat__item-num {
+        margin: 0;
         font-size: 7.2rem;
         font-weight: 700;
-        margin: 0; }
+        margin-bottom: 1rem;
+        line-height: 1; }
       .statistics .stat__item-text {
         text-transform: uppercase;
         font-size: 1.4rem;
@@ -308,6 +310,10 @@ h5 {
     width: 33.33%;
     padding: 30px 30px 30px;
     padding-left: 50px; }
+    .services__item:nth-child(-n + 3) {
+      border-bottom: 1px solid #e5e5e5; }
+    .services__item:nth-child(n + 4) {
+      margin-top: 2rem; }
     .services__item-title {
       font-size: 1.4rem;
       font-weight: 700;
@@ -340,3 +346,66 @@ h5 {
       background-position-x: -227px; }
     .services__item:nth-child(6) .services__item-icon:before {
       background-position-x: -283px; }
+
+.devices {
+  background-color: #d9d9d9;
+  background: url(../img/devices/design_bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 8rem; }
+  .devices__images {
+    position: relative;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto; }
+  .devices__iphone {
+    position: absolute;
+    bottom: -94px;
+    right: 0; }
+  .devices__ipad {
+    display: block; }
+
+.activity {
+  padding-top: 11rem;
+  padding-bottom: 8rem; }
+  .activity__text {
+    display: block;
+    width: 100%;
+    max-width: 99rem;
+    text-align: center;
+    margin: 0 auto; }
+  .activity__block {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between; }
+  .activity__section {
+    width: 100%;
+    max-width: 60rem; }
+  .activity__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    padding: 0 1.6rem; }
+    .activity__item-arrow {
+      position: absolute;
+      display: block;
+      top: 8px;
+      right: 1.5rem;
+      width: 32px;
+      height: 32px;
+      background: url(../img/activity/arrow.png) no-repeat center;
+      z-index: 1;
+      cursor: pointer;
+      transition: all 0.5s; }
+      .activity__item-arrow:hover {
+        transform: rotate(-180deg);
+        top: 10px; }
+    .activity__item-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .activity__item-icon {
+      display: block;
+      width: 32px;
+      height: 32px;
+      margin-right: 1.6rem; }

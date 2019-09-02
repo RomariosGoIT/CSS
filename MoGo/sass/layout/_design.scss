@@ -1,0 +1,22 @@
+.devices {
+  background-color: #d9d9d9;
+  background: url(../img/devices/design_bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 8rem;
+  &__images {
+    position: relative;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  &__iphone {
+    position: absolute;
+    bottom: -94px;
+    right: 0;
+  }
+
+  &__ipad {
+    display: block;
+  }
+}
