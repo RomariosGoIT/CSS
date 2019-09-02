@@ -8,15 +8,17 @@
       href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#000" />
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#000" />
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Mogo</title>
   </head>
   <body>
@@ -184,15 +186,58 @@
             </div>
             <div class="activity__section">
               <div class="activity__item">
-                <img src="./img/activity/photo_icon.png" alt="icon" class="activity__item-icon">
-                <p class="activity__item-title">Photography</p>
-                <i class="activity__item-arrow"></i>
+                <div class="activity__item-header">
+                  <img src="./img/activity/photo_icon.png" alt="icon" class="activity__item-icon" />
+                  <p class="activity__item-title">Photography</p>
+                  <i class="activity__item-arrow active" id="button-1"></i>
+                </div>
+                <div class="activity__item-text" id="toggle-1">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
               </div>
-
+              <div class="activity__item">
+                <div class="activity__item-header">
+                  <img src="./img/activity/photo_icon.png" alt="icon" class="activity__item-icon" />
+                  <p class="activity__item-title">Photography</p>
+                  <i class="activity__item-arrow" id="button-2"></i>
+                </div>
+                <div class="activity__item-text" id="toggle-2">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+              <div class="activity__item">
+                <div class="activity__item-header">
+                  <img src="./img/activity/photo_icon.png" alt="icon" class="activity__item-icon" />
+                  <p class="activity__item-title">Photography</p>
+                  <i class="activity__item-arrow" id="button-3"></i>
+                </div>
+                <div class="activity__item-text" id="toggle-3">
+                  <p id="toggle-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>
