@@ -61,12 +61,13 @@
     &-text {
       padding: 2rem;
       width: 60rem;
-      height: 18rem;
+      max-height: 18rem;
       border: 1px solid #e5e5e5;
       margin-top: -1px;
+			transition: max-height 0.2s ease-out;
       p {
         width: 56rem;
-        height: 14rem;
+        max-height: 14rem;
         margin: 0;
         overflow-y: scroll;
         &::-webkit-scrollbar-track {
