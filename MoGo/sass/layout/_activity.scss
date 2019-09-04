@@ -59,17 +59,23 @@
       margin-right: 1.6rem;
     }
     &-text {
-      padding: 2rem;
-      width: 60rem;
-      max-height: 18rem;
-      border: 1px solid #e5e5e5;
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
       margin-top: -1px;
-			transition: max-height 0.2s ease-out;
+      transition: max-height 0.2s;
+      border: 1px solid #e5e5e5;
+      visibility: hidden;
+
+      &.open {
+        visibility: visible;
+        max-height: 18rem;
+      }
+
       p {
-        width: 56rem;
-        max-height: 14rem;
-        margin: 0;
+        max-height: 150px;
         overflow-y: scroll;
+
         &::-webkit-scrollbar-track {
           border-radius: 10px;
           background-color: #f5f5f5;
