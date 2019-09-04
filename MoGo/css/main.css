@@ -597,6 +597,7 @@ h5 {
 
 .activity__item {
   margin-top: 10px;
+  border: 1px solid #e5e5e5;
 }
 
 .activity__item:first-child {
@@ -611,8 +612,15 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   padding: 4px 1.6rem;
+  cursor: pointer;
+}
+
+.activity__item-header.active > .activity__item-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 12px;
 }
 
 .activity__item-arrow {
@@ -624,15 +632,8 @@ h5 {
   height: 32px;
   background: url(../img/activity/arrow.png) no-repeat center;
   z-index: 1;
-  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-
-.activity__item-arrow.active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  top: 12px;
 }
 
 .activity__item-title {
@@ -651,11 +652,14 @@ h5 {
 .activity__item-text {
   padding: 0 18px;
   max-height: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #999;
   overflow: hidden;
   margin-top: -1px;
-  -webkit-transition: max-height 0.2s;
-  transition: max-height 0.2s;
-  border: 1px solid #e5e5e5;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
   visibility: hidden;
 }
 

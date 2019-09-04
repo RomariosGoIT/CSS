@@ -24,13 +24,20 @@
       margin-top: 0;
     }
     margin-top: 10px;
+    border: 1px solid #e5e5e5;
     &-header {
       position: relative;
       display: flex;
       align-items: center;
-      border: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
       padding: 4px 1.6rem;
+      cursor: pointer;
+      &.active > .activity__item-arrow {
+        transform: rotate(180deg);
+        top: 12px;
+      }
     }
+
     &-arrow {
       position: absolute;
       display: block;
@@ -40,12 +47,7 @@
       height: 32px;
       background: url(../img/activity/arrow.png) no-repeat center;
       z-index: 1;
-      cursor: pointer;
       transition: all 0.5s;
-      &.active {
-        transform: rotate(180deg);
-        top: 12px;
-      }
     }
     &-title {
       font-size: 1.4rem;
@@ -61,10 +63,13 @@
     &-text {
       padding: 0 18px;
       max-height: 0;
+      font-size: 1.5rem;
+      font-weight: 300;
+      font-style: italic;
+      color: #999;
       overflow: hidden;
       margin-top: -1px;
-      transition: max-height 0.2s;
-      border: 1px solid #e5e5e5;
+      transition: max-height 0.5s;
       visibility: hidden;
 
       &.open {
