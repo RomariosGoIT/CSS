@@ -695,8 +695,4 @@ h5 {
   height: 9rem;
   background-color: #95e1d3;
 }
-
-.activity__item-text p::-webkit-resizer {
-  width: 10px;
-}
 /*# sourceMappingURL=main.css.map */
